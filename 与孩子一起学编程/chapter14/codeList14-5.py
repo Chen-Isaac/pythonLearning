@@ -19,3 +19,8 @@ myDog = HotDog()
 print myDog.cooked_level
 print myDog.cooked_string
 print myDog.condiments
+
+print "Now I'm going to cook the hot dog."
+myDog.cook(4)
+print myDog.cooked_level
+print myDog.cooked_string
