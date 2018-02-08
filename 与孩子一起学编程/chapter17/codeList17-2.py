@@ -10,7 +10,7 @@ class MyBallClass(pygame.sprite.Sprite):
         self.speed = speed
         
     def move(self):
-        self.rect = self.rect.move(self.speed) #I think it not only get the rect but also erase the old pic
+        self.rect = self.rect.move(self.speed) #only get the rect
         if self.rect.left < 0 or self.rect.right > width: #width is a global variable
             self.speed[0] = -self.speed[0]
             
@@ -36,7 +36,7 @@ while True:
             sys.exit()
             
     pygame.time.delay(20)
-    screen.fill([255, 255, 255])
+    screen.fill([255, 255, 255])   #erase the old frame
     for ball in balls:
         ball.move()
         screen.blit(ball.image, ball.rect)

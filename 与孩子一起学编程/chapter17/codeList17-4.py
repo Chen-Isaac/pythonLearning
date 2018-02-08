@@ -17,7 +17,7 @@ class MyBallClass(pygame.sprite.Sprite):
             self.speed[1] = -self.speed[1]
             
 def animate(group):
-    screen.fill([255, 255, 255])
+    screen.fill([255, 255, 255])  #erase the background
     for ball in group:
         ball.move()
     for ball in group:
