@@ -1,0 +1,10 @@
+(lp0
+S'Isaac'
+p1
+aS'32'
+p2
+aS'purple'
+p3
+aS'sushi'
+p4
+a.
